@@ -13,4 +13,32 @@ Muestro el orden de Intalacion de BLFS y los pasos a seguir
 * El momento de la verdad
 1. libevent-2.1.12
 2. links-2.30
-3. 
+3. NSPR-4.38.2
+4. libgpg-error-1.59
+5. LZO-2.10
+6. icu-78.2
+7. Nettle-3.10.2
+8. libxml2-2.15.1
+9. npth-1.8
+10. libarchive-3.8.5
+11. SQLite-3.50.4 (No viene en la versión 13)
+12. sgml-common-0.6.3
+13. libtasn1-4.21.0
+14. libtirpc-1.3.6
+15. libnsl-2.0.1
+16. libgcrypt-1.12.0
+17. docbook-xsl-nons-1.79.2
+18. docbook-xml-4.5
+19. libxslt-1.1.45
+20. Zip-3.0
+21. Sharutils-4.15.2
+22. rpcsvc-proto-1.4.4
+23. NSS-3.120.1
+24. docbook-xml-5.0
+25. p11-kit-0.26.2
+26. make-ca-1.16.1
+27. Berkeley db-5.3.28 (No viene en la version 13)
+28. CrackLib-2.10.3
+29. libpwquality-1.4.5
+30. lynx2.9.2
+31. 
