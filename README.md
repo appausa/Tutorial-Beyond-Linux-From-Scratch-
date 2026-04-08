@@ -3,7 +3,7 @@ Muestro el orden de Intalacion de BLFS y los pasos a seguir
 
 # Estos primeros son necesarios para la instalación
 
-**nota: No importan las dependencias en estos.**
+**Nota: No importan las dependencias en estos.**
 1. Wget-1.25.0 (Necesario para las descargas)
 2. Nano-8.7.1 (Es mi editador preferido)
 3. OpenSSH-10.2p1 (Para intalar de forma remota)
