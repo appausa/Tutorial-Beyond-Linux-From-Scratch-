@@ -2,26 +2,7 @@
 Muestro el orden de Intalacion de BLFS y los pasos a seguir
 
 
-39. unixODBC-2.3.14
-40. OpenLDAP-2.6.12
-41. sendmail.8.18.1 (No viene en la version 13)
-42. Archive::Zip-1.68 (Perl)
-43. autovivification-0.18 (Perl)
-44. Business::ISBN::Data-20260214.001 (Perl)
-45. Business::ISBN-3.012 (Perl)
-46. Tie::Cycle-1.233 (Perl)
-47. Business::ISMN-1.205 (Perl)
-48. Business::ISSN-1.008 (Perl)
-49. Class::Accessor-0.51 (Perl)
-50. B::COW-0.007 (Perl)
-51. Number::Compare-0.03 (Perl)
-52. Text::Glob-0.11 (Perl)
-53. File::Find::Rule-0.35 (Perl)
-54. Data::Compare-1.29 (Perl)
-55. Data::Dump-1.25 (Perl)
-56. Data::Uniqid-0.12 (Perl)
-57. Encode::HanExtra-0.23 (Perl)
-58. Encode::JIS2K-0.05 (Perl)
+
 59. File::FcntlLock-0.22 (Perl)
 60. Test::Warnings-0.038 (Perl)
 61. File::Slurper-0.014 (Perl)
