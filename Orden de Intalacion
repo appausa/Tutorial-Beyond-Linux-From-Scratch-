@@ -1,4 +1,4 @@
-# Estos primeros son necesarios para la instalación
+# Estos son los primeros paquetes necesarios para la instalación
 
 **Nota: No importan las dependencias en estos.**
 1. Wget-1.25.0 (Necesario para las descargas)
