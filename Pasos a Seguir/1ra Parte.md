@@ -46,10 +46,95 @@ Preparar wget-1.25.0 para la compilación e intalar
 ```bash
 time { ./configure --prefix=/usr    \
             --sysconfdir=/etc       \
-            --with-ssl=openssl && make && make
+            --with-ssl=openssl && make
+```
+Ahora como usuario root:
+```bash
+make install
 ```
 Borramos la carpeta de wget-1.25.0 antes creada
 ```bash
 cd ..
 rm -rf wget-1.25.0
+```
+**Nano-8.7.1**
+
+Descomprimimos el primer paquete y accedemos a el
+```bash
+tar -xjvf nano-8.7.1.tar.xz
+cd nano-8.7.1
+```
+Preparar nano-8.7.1 para la compilación:
+```bash
+time { ./configure --prefix=/usr     \
+            --sysconfdir=/etc \
+            --enable-utf8     \
+            --docdir=/usr/share/doc/nano-8.7.1 && make; }
+```
+Ahora como usuario root:
+```bash
+make install &&
+install -v -m644 doc/{nano.html,sample.nanorc} /usr/share/doc/nano-8.7.1
+```
+Ahora arreglamos algunas configuraciones en /etc/nanorc and ~/.nanorc
+```bash
+set autoindent
+set constantshow
+set fill 72
+set historylog
+set multibuffer
+set nohelp
+set positionlog
+set quickblank
+set regexp
+```
+Borramos la carpeta de nano-8.7.1 antes creada
+```bash
+cd ..
+rm -rf nano-8.7.1
+```
+**OpenSSH-10.2p1**
+
+Descomprimimos el primer paquete y accedemos a el
+```bash
+tar -xjvf openssh-10.2p1.tar.gz
+cd openssh-10.2p1 
+```
+Preparar openssh-10.2p1 para la compilación e intalar
+```bash
+install -v -g sys -m700 -d /var/lib/sshd &&
+
+groupadd -g 50 sshd        &&
+useradd  -c 'sshd PrivSep' \
+         -d /var/lib/sshd  \
+         -g sshd           \
+         -s /bin/false     \
+         -u 50 sshd
+      
+time { ./configure --prefix=/usr                     \
+            --sysconfdir=/etc/ssh                    \
+            --with-privsep-path=/var/lib/sshd        \
+            --with-default-path=/usr/bin             \
+            --with-superuser-path=/usr/sbin:/usr/bin \
+            --with-pid-dir=/run  && make; }
+```
+Ahora chequemos la compilación:
+```bash
+make -j1 tests
+```
+Ahora como usuario root:
+```bash
+make install &&
+install -v -m755    contrib/ssh-copy-id /usr/bin     &&
+
+install -v -m644    contrib/ssh-copy-id.1 \
+                    /usr/share/man/man1              &&
+install -v -m755 -d /usr/share/doc/openssh-10.2p1     &&
+install -v -m644    INSTALL LICENCE OVERVIEW README* \
+                    /usr/share/doc/openssh-10.2p1
+```
+Borramos la carpeta de wget-1.25.0 antes creada
+```bash
+cd ..
+rm -rf openssh-10.2p1
 ```
