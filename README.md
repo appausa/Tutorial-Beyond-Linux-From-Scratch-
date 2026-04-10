@@ -1,5 +1,5 @@
 # Tutorial-Beyond-Linux-From-Scratch-
-Muestro el [orden de Intalacion](https://github.com/appausa/Tutorial-Beyond-Linux-From-Scratch-/blob/main/Orden%20de%20Intalacion.md) de BLFS y los pasos a seguir
+Muestro el [Orden de Intalacion de BLFS](https://github.com/appausa/Tutorial-Beyond-Linux-From-Scratch-/blob/main/Orden%20de%20Intalacion.md) y los [Pasos a Seguir](https://github.com/appausa/Tutorial-Beyond-Linux-From-Scratch-/tree/main/Pasos%20a%20Seguir)
 
 ## En la carpeta Archivos/Paquetes Extras están Paquetes que no vienen en Linux From Scratch
 
