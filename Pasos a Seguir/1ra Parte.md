@@ -100,7 +100,7 @@ Descomprimimos el primer paquete y accedemos a el
 tar -xjvf openssh-10.2p1.tar.gz
 cd openssh-10.2p1 
 ```
-Preparar openssh-10.2p1 para la compilación e intalar
+Preparar openssh-10.2p1 para la compilación OpenSSH corre dos procesos este primero intalar uno a uno:
 ```bash
 install -v -g sys -m700 -d /var/lib/sshd &&
 
