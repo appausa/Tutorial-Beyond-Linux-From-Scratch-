@@ -36,6 +36,7 @@ wget --input-file=wget-list --continue --directory-prefix=/sources/BLFS
 # Es el momento de comenzar la intalación
 
 **Wget-1.25.0**
+
 Descomprimimos el primer paquete y accedemos a el
 ```bash
 tar -xjvf wget-1.25.0.tar.gz
