@@ -21,13 +21,13 @@ cd /sources/BLFS
 ```
 Para descargar todos los paquetes y parches utilizando wget-list como entrada para el comando wget, utilice:
 ```bash
-wget https://www.linuxfromscratch.org/blfs/view/12.4/stable/wget-list
+wget https://github.com/appausa/Tutorial-Beyond-Linux-From-Scratch-/blob/main/Archivos/wget-list
 ```
 Ahora tomamos el siguiente enlace las descargamos
 ```bash
 wget --input-file=wget-list --continue --directory-prefix=/sources/BLFS 
 ```
-Puede descargar el archivo wget-list.txt y desde el disco por ejemplo descarga intalarlas
+Puede descargar el archivo [wget-list](https://github.com/appausa/Tutorial-Beyond-Linux-From-Scratch-/blob/main/Archivos/wget-list) y desde el disco por ejemplo descarga intalarlas
 ```bash
 cd ~Dounloads/ 
 cat wget-list
